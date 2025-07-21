@@ -1,0 +1,21 @@
+nav:
+  - Getting started:
+    - Overview: getting_started/index.md
+    - Quick Start API Mocking with Java and JUnit 4: getting_started/java-junit.md
+    - Download and Install: getting_started/download-and-installation.md
+    - WireMock Tutorials: getting_started/getting-started.md
+    - Frequently Asked Questions: getting_started/faq.md
+
+
+  - WorkMock Standalone: 
+    - Running in docker: wiremock_standalone/docker.md
+    - Running as a standalone process: wiremock_standalone/java-jar.md
+    - Administration API: wiremock_standalone/administration.md
+
+  - WireMock Versions: 
+    - WireMock Beta: "!include ./v4/mkdocs.yml"
+    - WireMock Archive: "!include ./v2/mkdocs.yml"
+
+  - Reference:
+    - Admin API: reference/admin-api-reference.md
+    - WireMock API Templates Library: reference/mock-api-templates.md

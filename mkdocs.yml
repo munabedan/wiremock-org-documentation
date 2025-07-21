@@ -1,0 +1,71 @@
+INHERIT: nav.yml
+site_name: WireMock
+
+repo_url: "http://github.com/wiremock"
+site_description: WireMock is a flexible API mocking tool for fast, robust and comprehensive testing.
+site_author: Tom Akehurst
+
+
+theme:
+  custom_dir: overrides
+  font: 
+    text: DM Sans
+    code: Source Code Pro
+  name: material
+  palette:
+    scheme: wiremock
+  logo: assets/images/logos/wiremock/logo_wide.svg
+  locale: en
+  features:
+    - toc.integrate
+    - navigation.path
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.sections
+    - navigation.footer
+    - content.code.copy
+
+
+
+
+markdown_extensions:
+  - md_in_html
+  - admonition
+  - pymdownx.highlight:
+      use_pygments: true
+      pygments_lang_class: true
+      auto_title: true
+      line_spans: __span
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: 'docs/'
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - monorepo
+  - search
+  - macros
+  - mkdocs-breadcrumbs-plugin:
+      delimiter: " / "
+      log_level: "ERROR"
+      exclude_paths:
+        - "docs/**"
+      generate_home_index: false
+      use_page_titles: false 
+      home_text: "Documentation"
+
+extra:
+  wiremock_version: 3.13.1
+  wiremock_4_version: 4.0.0-beta.10
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+watch:
+  - docs
+  - overrides
