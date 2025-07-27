@@ -8,17 +8,17 @@
 <h2>Getting Started</h2>
 
 <div class="grid-container">
-  <a class="card" href="/getting_started">
+  <a class="card" href="/getting_started/overview/">
     <img src="assets/images/logos/doc-sections/summary.svg" />
     Overview
   </a>
-  <a class="card" href="/getting_started/getting-started">
+  <a class="card" href="/getting_started/wiremock_tutorials/">
     <img
       src="assets/images/logos/doc-sections/quickstart.svg"
     />
     Quick Start
   </a>
-  <a class="card" href="/getting_started/download-and-installation">
+  <a class="card" href="/getting_started/download_and_installation/">
     <img src="assets/images/logos/doc-sections/download.svg" />
     Download
   </a>
@@ -33,20 +33,20 @@
 <p>
   WireMock provides the following generic distributions that allow running it as
   a
-  <a href="./standalone">standalone server</a>
+  <a href="/running_wiremock/wiremock_standalone_service/">standalone server</a>
   in a container or within a Java Virtual Machine.
 </p>
 
 <div class="grid-container">
-  <a class="card" href="/wiremock_standalone/standalone">
+  <a class="card" href="/running_wiremock/running_as_a_standalone_process/">
     <img src="assets/images/logos/technology/jar.svg" />
     Standalone JAR
   </a>
-  <a class="card" href="/wiremock_standalone/docker">
+  <a class="card" href="/running_wiremock/running_in_docker/">
     <img src="assets/images/logos/technology/docker.svg" />
     Docker
   </a>
-  <a class="card" href="/solutions/kubernetes">
+  <a class="card" href="/solutions/kubernetes/">
     <img src="assets/images/logos/technology/helm.svg" />
     Helm (Experimental)
   </a>
@@ -76,14 +76,14 @@
 </p>
 
 <div class="grid-container">
-  <a class="card card-use-case" href="./request-matching">
+  <a class="card card-use-case" href="/stubbing_and_verifying/request_matching/">
     <img
       src="assets/images/requestIcon.svg"
       alt="Wiremock Features"
     />
     Advanced request matching
   </a>
-  <a class="card card-use-case" href="./response-templating">
+  <a class="card card-use-case" href="/stubbing_and_verifying/response_templating/">
     <img
       src="assets/images/responseIcon.svg"
       alt="wiremock dynamic response"
@@ -91,21 +91,21 @@
     Dynamic response templating
   </a>
   <!-- TODO: replace by a generic test framework listing -->
-  <a class="card card-use-case" href="./junit-jupiter">
+  <a class="card card-use-case" href="/java_usage/junit_5_plus_jupiter/">
     <img
       src="assets/images/logos/doc-sections/checklist.svg"
       alt="wiremock unit tests"
     />
     Use API Mocking in your unit tests
   </a>
-  <a class="card card-use-case" href="./simulating-faults">
+  <a class="card card-use-case" href="/stubbing_and_verifying/simulating_faults/">
     <img
       src="assets/images/faultIcon.svg"
       alt="wiremock fault and latency"
     />
     Fault and latency injection
   </a>
-  <a class="card card-use-case" href="./record-playback">
+  <a class="card card-use-case" href="/record_and_playback/record_and_playback/">
     <img
       src="assets/images/recordIcon.svg"
       alt="wiremock record playback"
@@ -118,14 +118,14 @@
         Java, Python, HTTP and JSON file APIs
     </a>
     -->
-  <a class="card card-use-case" href="./mock-api-templates">
+  <a class="card card-use-case" href="/reference/mock-api-templates/">
     <img
       src="assets/images/logos/doc-sections/template.svg"
       alt="WireMock API Templates"
     />
     Use pre-defined Mock API templates
   </a>
-  <a class="card card-use-case" href="./extending-wiremock">
+  <a class="card card-use-case" href="/extensibility/extending_wiremock/">
     <img
       src="assets/images/logos/doc-sections/extensibility.svg"
       alt="Extending WireMock"
@@ -143,19 +143,19 @@
 </p>
 
 <div class="grid-container">
-  <a class="card" href="./webhooks-and-callbacks">
+  <a class="card" href="/protocols/webhooks_and_callbacks/">
     <img src="assets/images/logos/technology/webhooks.svg" />
     Webhooks and Callbacks
   </a>
-  <a class="card" href="./https">
+  <a class="card" href="/protocols/serving_https/">
     <img src="assets/images/logos/technology/https.svg" />
     HTTPs
   </a>
-  <a class="card" href="./grpc">
+  <a class="card" href="/protocols/mocking_grpc_services/">
     <img src="assets/images/logos/technology/grpc.png" />
     gRPC
   </a>
-  <a class="card" href="./solutions/graphql">
+  <a class="card" href="/solutions/graphql/">
     <img src="assets/images/logos/technology/graphql.svg" />
     GraphQL
   </a>
@@ -169,89 +169,89 @@
 </p>
 
 <div class="grid-container">
-  <a class="card" href="./solutions/jvm">
+  <a class="card" href="/solutions/jvm/">
     <img src="assets/images/logos/technology/java.svg" />
     Java and JVM
   </a>
-  <a class="card" href="./solutions/python">
+  <a class="card" href="/solutions/python/">
     <img src="assets/images/logos/technology/python.svg" />
     Python
   </a>
-  <a class="card" href="./solutions/spring-boot-integration">
+  <a class="card" href="/solutions/spring-boot-integration/">
     <img src="assets/images/logos/technology/spring.svg" />
     Spring Boot
   </a>
-  <a class="card" href="./solutions/nodejs">
+  <a class="card" href="/solutions/nodejs/">
     <img
       class="card-image"
       src="assets/images/logos/technology/nodejs.svg"
     />
     Node.js
   </a>
-  <a class="card" href="./solutions/android">
+  <a class="card" href="/solutions/android/">
     <img
       class="card-image"
       src="assets/images/logos/technology/android.svg"
     />
     Android
   </a>
-  <a class="card" href="./solutions/dotnet">
+  <a class="card" href="/solutions/dotnet/">
     <img
       class="card-image"
       src="assets/images/logos/technology/dotnet.svg"
     />
     .NET
   </a>
-  <a class="card" href="./solutions/golang">
+  <a class="card" href="/solutions/golang/">
     <img
       class="card-image"
       src="assets/images/logos/technology/golang.svg"
     />
     Golang
   </a>
-  <a class="card" href="./solutions/rust">
+  <a class="card" href="/solutions/rust/">
     <img
       class="card-image"
       src="assets/images/logos/technology/rust.svg"
     />
     Rust
   </a>
-  <a class="card" href="./solutions/groovy">
+  <a class="card" href="/solutions/groovy/">
     <img
       class="card-image"
       src="assets/images/logos/technology/groovy.svg"
     />
     Groovy
   </a>
-  <a class="card" href="./solutions/kotlin">
+  <a class="card" href="/solutions/kotlin/">
     <img
       class="card-image"
       src="assets/images/logos/technology/kotlin.svg"
     />
     Kotlin
   </a>
-  <a class="card" href="./solutions/kubernetes">
+  <a class="card" href="/solutions/kubernetes/">
     <img
       class="card-image"
       src="assets/images/logos/technology/kubernetes.svg"
     />
     Kubernetes
   </a>
-  <a class="card" href="./solutions/testcontainers">
+  <a class="card" href="/solutions/testcontainers/">
     <img
       class="card-image"
       src="assets/images/logos/technology/testcontainers.svg"
     />
     Testcontainers
   </a>
-  <a class="card" href="./solutions/quarkus">
+  <a class="card" href="/solutions/quarkus/">
     <img
       class="card-image"
       src="assets/images/logos/technology/quarkus.svg"
     />
     Quarkus
   </a>
-  <a class="card" href="./solutions/c_cpp">
+  <a class="card" href="/solutions/c_cpp/">
     <img
       class="card-image"
       src="assets/images/logos/technology/c.svg"

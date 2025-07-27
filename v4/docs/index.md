@@ -4,9 +4,11 @@ meta_title: "Changes to WireMock in version 4.x"
 ---
 
 
+
 !!! wiremock-cloud "WireMock Cloud"
 
-        [To create publicly hosted mock APIs without anything to install, learn more about WireMock Cloud.](https://www.wiremock.io?utm_source=oss-docs&utm_medium=oss-docs&utm_campaign=cloud-callouts-install&utm_id=cloud-callouts&utm_term=cloud-callouts-install)
+    [To create publicly hosted mock APIs without anything to install, learn more about WireMock Cloud.](https://www.wiremock.io?utm_source=oss-docs&utm_medium=oss-docs&utm_campaign=cloud-callouts-install&utm_id=cloud-callouts&utm_term=cloud-callouts-install)
+
 
 
 ## v4 Beta

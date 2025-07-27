@@ -1,8 +1,8 @@
 ---
 title: WireMock and Kubernetes
 meta_title: Kubernetes Solutions | WireMock
+logo: /images/logos/technology/kubernetes.svg
 ---
-
 
 
 !!! wiremock-cloud "WireMock Cloud"
@@ -37,4 +37,4 @@ References:
 
 ## Useful pages
 
-- [WireMock and Golang](../golang) - There's WireMock for Golang developers too!
+- [WireMock and Golang](../solutions/golang.md) - There's WireMock for Golang developers too!

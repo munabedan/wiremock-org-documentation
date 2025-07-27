@@ -27,6 +27,6 @@ requests==2.32.4
 six==1.17.0
 urllib3==2.5.0
 watchdog==6.0.0
-mkdocs-monorepo-plugin @ git+https://github.com/bitsondatadev/mkdocs-monorepo-plugin@url-fix
+mkdocs-monorepo-plugin
 mkdocs-breadcrumbs-plugin
 mkdocs-macros-plugin
