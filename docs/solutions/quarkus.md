@@ -1,8 +1,17 @@
 ---
 title: "WireMock and Quarkus"
 meta_title: "Quarkus Solutions | WireMock"
-logo: /images/logos/technology/quarkus.svg
 ---
+
+<br>
+
+<div class="solution-block">
+    <div class="solution-header"> 
+        <img src="../../assets/images/logos/wiremock/logo_square.svg"> 
+        <img src="../../assets/images/logos/doc-sections/connect.svg"> 
+        <img src="../../assets/images/logos/technology/quarkus.svg">
+    </div>
+</div>
 
 !!! wiremock-cloud "WireMock Cloud"
 

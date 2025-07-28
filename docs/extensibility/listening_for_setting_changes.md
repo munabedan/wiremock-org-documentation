@@ -3,6 +3,8 @@ title: Listening for Settings Changes
 meta_title: Listening for Settings Changes
 ---
 
+<br>
+
 You can listen for changes to the global settings object.
 
 This is most useful when combined with other extension points, allowing extensions to define and make use of extended settings values rather than rolling their own configuration strategy.

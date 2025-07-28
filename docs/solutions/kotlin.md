@@ -1,9 +1,17 @@
 ---
 title: WireMock and Kotlin
 meta_title: Kotlin Solutions | WireMock
-logo: /images/logos/technology/kotlin.svg
 ---
 
+<br>
+
+<div class="solution-block">
+  <div class="solution-header"> 
+    <img src="../../assets/images/logos/wiremock/logo_square.svg"> 
+    <img src="../../assets/images/logos/doc-sections/connect.svg"> 
+    <img src="../../assets/images/logos/technology/kotlin.svg">
+  </div>
+</div>
 
 !!! wiremock-cloud "WireMock Cloud"
 

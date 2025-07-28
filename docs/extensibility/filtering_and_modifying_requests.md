@@ -1,10 +1,10 @@
 ---
-layout: docs
 title: Filtering and Modifying Requests
 meta_title: Filtering and Modifying Requests
-description: Filtering and modifying requests via extensions
 ---
 
+
+<br>
 
 
 !!! wiremock-cloud "WireMock Cloud"

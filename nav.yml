@@ -41,6 +41,7 @@ nav:
   - Protocols:
     - Webhooks and Callbacks: protocols/webhooks_and_callbacks.md
     - Mocking gRPC services: protocols/mocking_grpc_services.md
+    - WireMock and GraphQL: solutions/graphql.md
     - JSON Web Tokens (JWT): protocols/json_web_tokens.md
     - Serving HTTPS: protocols/serving_https.md
 

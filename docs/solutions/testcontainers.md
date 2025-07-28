@@ -1,9 +1,17 @@
 ---
 title: "WireMock and Testcontainers"
 meta_title: "Testcontainers Solutions | WireMock"
-logo: /images/logos/technology/testcontainers.svg
 ---
 
+<br>
+
+<div class="solution-block">
+    <div class="solution-header"> 
+        <img src="../../assets/images/logos/wiremock/logo_square.svg"> 
+        <img src="../../assets/images/logos/doc-sections/connect.svg"> 
+        <img src="../../assets/images/logos/technology/testcontainers.svg">
+    </div>
+</div>
 
 !!! wiremock-cloud "WireMock Cloud"
 

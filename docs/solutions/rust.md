@@ -1,9 +1,17 @@
 ---
 title: "WireMock and Rust"
 meta_title: "Rust Solutions | WireMock"
-logo: /images/logos/technology/rust.svg
 ---
 
+<br>
+
+<div class="solution-block">
+    <div class="solution-header"> 
+        <img src="../../assets/images/logos/wiremock/logo_square.svg"> 
+        <img src="../../assets/images/logos/doc-sections/connect.svg"> 
+        <img src="../../assets/images/logos/technology/rust.svg">
+    </div>
+</div>
 
 !!! wiremock-cloud "WireMock Cloud"
 

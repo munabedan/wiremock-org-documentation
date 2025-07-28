@@ -27,7 +27,10 @@ First, start an instance of [WireMock running standalone](../running_wiremock/ru
 Once that's running visit the recorder UI page at [http://localhost:8080/\_\_admin/recorder](http://localhost:8080/__admin/recorder)
 (assuming you started WireMock on the default port of 8080).
 
-![Recorder UI]( '/images/recorder-screenshot.png' )
+
+
+<img src="../../assets/images/recorder-screenshot.png" alt="Recorder UI" style="width: 100%; height: auto; margin-top: 1em;"/>
+
 
 Enter the URL you wish to record from in the target URL field and click the Record button. You can use `http://examples.wiremockapi.cloud` to try it out.
 
@@ -130,7 +133,7 @@ POST /__admin/mappings
 > You can still take snapshots without a proxy stub configured.
 > You might want to do this e.g. if you want to capture requests made by your application under test that you can then modify by hand to provide the appropriate responses.
 
-Once you have made some requests through WireMock (which you can view under http://localhost:8080/\_\_admin/requests) you can trigger a snapshot to generate stub mappings:
+Once you have made some requests through WireMock (which you can view under `http://localhost:8080/\_\_admin/requests`) you can trigger a snapshot to generate stub mappings:
 
 Java:
 

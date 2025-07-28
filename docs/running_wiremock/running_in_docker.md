@@ -4,6 +4,8 @@ meta_title: Configuring and running WireMock in Docker | WireMock
 ---
 
 
+<br>
+
 !!! wiremock-cloud "WireMock Cloud"
 
     [WireMock Cloud offers secure, publicly hosted mock APIs with nothing to install.](https://www.wiremock.io?utm_source=oss-docs&utm_medium=oss-docs&utm_campaign=cloud-callouts-docker&utm_id=cloud-callouts&utm_term=cloud-callouts-docker)

@@ -3,6 +3,8 @@ title: Support
 meta_title: How to get WireMock support
 ---
 
+<br>
+
 WireMock is an open source project.
 In accordance with the [Apache License 2.0](https://github.com/wiremock/wiremock/blob/master/LICENSE.txt),
 in general there is no support or guarantees provided for it.

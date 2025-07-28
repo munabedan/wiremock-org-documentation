@@ -3,6 +3,8 @@ title: "WireMock for Java and JVM languages"
 meta_title: "Java and Java Virtual Machine Solutions | WireMock"
 ---
 
+<br>
+
 <div class="solution-block">
     <div class="solution-header"> 
         <img src="../../assets/images/logos/wiremock/logo_square.svg"> 

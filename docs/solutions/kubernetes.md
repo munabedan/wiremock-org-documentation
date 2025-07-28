@@ -1,9 +1,17 @@
 ---
 title: WireMock and Kubernetes
 meta_title: Kubernetes Solutions | WireMock
-logo: /images/logos/technology/kubernetes.svg
 ---
 
+<br>
+
+<div class="solution-block">
+    <div class="solution-header"> 
+        <img src="../../assets/images/logos/wiremock/logo_square.svg"> 
+        <img src="../../assets/images/logos/doc-sections/connect.svg"> 
+        <img src="../../assets/images/logos/technology/kubernetes.svg">
+    </div>
+</div>
 
 !!! wiremock-cloud "WireMock Cloud"
 

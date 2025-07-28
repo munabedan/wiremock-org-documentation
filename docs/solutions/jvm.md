@@ -1,14 +1,23 @@
 ---
 title: "WireMock for Java and JVM languages"
 meta_title: "Java and Java Virtual Machine Solutions | WireMock"
-description: "Additional solutions for WireMock when using Java or other JVM based languages"
-logo: /images/logos/technology/java.svg
 ---
+
+<br>
+
+<div class="solution-block">
+  <div class="solution-header"> 
+    <img src="../../assets/images/logos/wiremock/logo_square.svg"> 
+    <img src="../../assets/images/logos/doc-sections/connect.svg"> 
+    <img src="../../assets/images/logos/technology/java.svg">
+  </div>
+</div>
 
 
 !!! wiremock-cloud "WireMock Cloud"
 
     [Centralize and scale your API mocks with WireMock Cloud.](https://www.wiremock.io?utm_source=oss-docs&utm_medium=oss-docs&utm_campaign=cloud-callouts-solutionjvm&utm_id=cloud-callouts&utm_term=cloud-callouts-solutionjvm)
+
 
 WireMock was originally created for Java development,
 and there are plenty of solutions when developing applications powered by the Java Virtual Machine.

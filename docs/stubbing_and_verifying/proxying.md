@@ -18,7 +18,7 @@ service's response. Responses that the live service can't be forced to
 generate on demand can thus be injected for testing. Proxying also
 supports [record and playback](../record_and_playback/record_and_playback.md).
 
-# Proxy stub mappings
+### Proxy stub mappings
 
 Proxy responses are defined in exactly the same manner as stubs, meaning
 that the same request matching criteria can be used.
@@ -48,7 +48,7 @@ The JSON equivalent would be:
 }
 ```
 
-# Proxy/intercept
+## Proxy/intercept
 
 The proxy/intercept pattern described above is achieved by adding a low
 priority proxy mapping with a broad URL match and any number of higher
@@ -66,7 +66,7 @@ stubFor(get(urlEqualTo("/api/override/123")).atPriority(1)
         .willReturn(aResponse().withStatus(503)));
 ```
 
-# Remove path prefix
+## Remove path prefix
 
 The prefix of a request path can be removed before proxying the request:
 
@@ -95,7 +95,7 @@ or
 Requests using the above path will be forwarded
 to `http://otherhost.com/approot/doc/123`
 
-# Additional headers
+## Additional headers
 
 It is possible to configure the proxy to add headers before forwarding
 the request to the destination:
@@ -127,7 +127,7 @@ or
 
 You can also add response headers via the same method as for non-proxy responses (see [Stubbing](../stubbing_and_verifying/stubbing.md)).
 
-# Remove headers
+## Remove headers
 
 It is possible to configure the proxy to remove headers before forwarding the reques to the destination
 ([additional headers](#additional-headers) matching the removed headers will still be added).
@@ -156,14 +156,14 @@ or
 }
 ```
 
-## Standalone shortcut
+### Standalone shortcut
 
 It is possible to start the standalone running with the catch-all stub
 already configured:
 
 Then it's simply a case of adding your stub mapping `.json` files under `mappings` as usual (see [Stubbing](../stubbing_and_verifying/stubbing.md)).
 
-## Running as a browser proxy
+### Running as a browser proxy
 
 WireMock can be made to work as a forward (browser) proxy.
 
@@ -177,7 +177,8 @@ $ java -jar wiremock-standalone-{{ wiremock_version }}.jar --enable-browser-prox
 ```
 
 Then open your browser's proxy settings and point them to the running server:
-<img src="../assets/images/firefox-proxy-screenshot.png" alt="Firefox proxy screenshot" style="width: 50%; height: auto; margin-top: 1em;"/>
+
+<img src="../../assets/images/firefox-proxy-screenshot.png" alt="Firefox proxy screenshot" style="width: 50%; height: auto; margin-top: 1em;"/>
 
 After that, you can configure stubs as described in [Running Standalone](../running_wiremock/running_as_a_standalone_process.md/#configuring-wiremock-using-the-java-client) and then browse to a website. Any resources fetched whose requests are matched by stubs you have configured will be overridden by the stub's response.
 
@@ -212,7 +213,7 @@ Json payload to update via admin API
 WireMock.updateSettings(WireMock.getSettings().copy().proxyPassThrough(false).build());
 ```
 
-### Browser proxying of HTTPS
+#### Browser proxying of HTTPS
 
 WireMock allows forward proxying, stubbing & recording of HTTPS traffic.
 
@@ -222,7 +223,7 @@ _We strongly recommend using WireMock over HTTP to proxy HTTPS_; there are no as
 
 Note that when clients / operating systems distinguish between HTTP & HTTPS proxies they are often referring to the scheme of the target server, not the scheme the proxy server is listening on.
 
-#### Getting your client to trust the certificate presented by WireMock
+##### Getting your client to trust the certificate presented by WireMock
 
 Normally when proxying HTTPS the proxy creates a TCP tunnel between the client and the target server, so the HTTPS session is between the client and the target server.
 While the proxy passes the bytes back and forward, it cannot understand them because there is end-to-end encryption between the client and the target.
@@ -256,7 +257,7 @@ A few caveats:
     add it to your trusted certs then anyone getting hold of it could potentially
     get access to any service you use on the web.
 
-#### Trusting targets with invalid HTTPS certificates
+##### Trusting targets with invalid HTTPS certificates
 
 For convenience when acting as a _reverse_ proxy WireMock ignores HTTPS certificate problems from the target such as untrusted certificates or incorrect hostnames on the certificate.
 When browser proxying, however, it is normal to proxy all traffic, often for the entire operating system.
@@ -278,7 +279,7 @@ specified via the `--https-truststore`, and WireMock will then trust them withou
 needing the `--trust-proxy-target` parameter (so long as they match the
 requested host).
 
-#### Proxying HTTPS on the HTTPS endpoint
+##### Proxying HTTPS on the HTTPS endpoint
 
 The only use case we can think of for this is if you are using WireMock to test
 a generic HTTPS client, and want that HTTPS client to support proxying HTTPS over
@@ -312,7 +313,7 @@ docker run --rm -it -p 44300:44300 wernight/spdyproxy
 curl --proxy-insecure -x https://localhost:44300 -k 'https://www.example.com/'
 ```
 
-#### Security concerns
+##### Security concerns
 
 Acting as a man in the middle for HTTPS traffic has to be done at your own risk.
 Whilst best efforts have been taken to reduce your risk, you should be aware you are granting WireMock unencrypted access to all HTTPS traffic proxied via WireMock,
@@ -320,7 +321,7 @@ and that as part of its normal operation WireMock may store that traffic, in mem
 If you choose to trust the root CA certificate WireMock is using, or you choose to bypass HTTPS verification for some or all target servers,
 you should understand the risk involved.
 
-## Proxying via another proxy server
+### Proxying via another proxy server
 
 If you're inside a network that only permits HTTP traffic out to the
 internet via an opaque proxy you might wish to set up proxy mappings
@@ -334,7 +335,7 @@ WireMockServer wireMockServer = new WireMockServer(options()
 );
 ```
 
-## Proxying to a target server that requires client certificate authentication
+### Proxying to a target server that requires client certificate authentication
 
 WireMock's proxy client will send a client certificate if the target
 service requires it and a trust store containing the certificate is

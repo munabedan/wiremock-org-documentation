@@ -3,6 +3,9 @@ title: WireMock API Templates Library
 meta_title: WireMock API Templates Library
 ---
 
+<br>
+
+
 !!! wiremock-cloud "WireMock Cloud"
 
     [To easily share templates across teams or choose from thousands of popular 3rd party templates, learn more about WireMock Cloud.](https://www.wiremock.io?utm_source=oss-docs&utm_medium=oss-docs&utm_campaign=cloud-callouts-templates&utm_id=cloud-callouts&utm_term=cloud-callouts-templates)

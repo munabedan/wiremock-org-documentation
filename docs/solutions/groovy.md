@@ -1,10 +1,17 @@
 ---
 title: "WireMock and Groovy"
 meta_title: "Groovy Solutions | WireMock"
-description: "Additional solutions for WireMock when using Groovy"
-logo: /images/logos/technology/groovy.svg
 ---
 
+<br>
+
+<div class="solution-block">
+    <div class="solution-header"> 
+        <img src="../../assets/images/logos/wiremock/logo_square.svg"> 
+        <img src="../../assets/images/logos/doc-sections/connect.svg"> 
+        <img src="../../assets/images/logos/technology/groovy.svg">
+    </div>
+</div>
 
 !!! wiremock-cloud "WireMock Cloud"
 

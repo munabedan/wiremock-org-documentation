@@ -3,6 +3,10 @@ title: Deploying into a servlet container
 meta_title: Deploying into a servlet container | WireMock
 ---
 
+
+<br>
+
+
 WireMock can be packaged up as a WAR and deployed into a servlet
 container, with some caveats: fault injection and browser proxying won't
 work, `\_\_`files won't be treated as a docroot as with standalone, the

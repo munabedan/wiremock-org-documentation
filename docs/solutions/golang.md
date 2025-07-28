@@ -1,10 +1,17 @@
 ---
 title: "WireMock and Go"
 meta_title: "Golang Solutions | WireMock"
-description: "Additional solutions for WireMock when using Golang"
-logo: /images/logos/technology/golang.svg
 ---
 
+<br>
+
+<div class="solution-block">
+	<div class="solution-header"> 
+		<img src="../../assets/images/logos/wiremock/logo_square.svg"> 
+		<img src="../../assets/images/logos/doc-sections/connect.svg"> 
+		<img src="../../assets/images/logos/technology/golang.svg">
+	</div>
+</div>
 
 !!! wiremock-cloud "WireMock Cloud"
 

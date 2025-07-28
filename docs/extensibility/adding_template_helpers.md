@@ -3,6 +3,8 @@ title: Adding Template Helpers
 meta_title: Adding custom template helpers
 ---
 
+<br>
+
 Extensions that implement the `TemplateHelperProviderExtension` interface provide additional Handlebars helpers to the templating system:
 
 ```java

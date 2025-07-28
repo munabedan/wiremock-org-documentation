@@ -4,6 +4,8 @@ meta_title: WireMock Admin REST API Documentation | WireMock
 ---
 
 
+<br>
+
 !!! wiremock-cloud "WireMock Cloud"
 
     [WireMock Cloud offers secure, publicly hosted mock APIs with nothing to install.](https://www.wiremock.io?utm_source=oss-docs&utm_medium=oss-docs&utm_campaign=cloud-callouts-adminapi&utm_id=cloud-callouts&utm_term=cloud-callouts-adminapi)
@@ -17,3 +19,9 @@ Below is the full API reference:
 
 <redoc spec-url="../wiremock-admin-api.json"></redoc>
 <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"> </script>
+
+<style>
+ .md-sidebar.md-sidebar--secondary{
+    display: none;
+  }
+</style>

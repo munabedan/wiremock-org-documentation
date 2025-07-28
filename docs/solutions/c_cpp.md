@@ -1,11 +1,17 @@
 ---
 title: "WireMock and C/C++"
 meta_title: "C/C++ Solutions | WireMock"
-description: "Additional solutions for WireMock when developing with C/C++"
-logo: /images/logos/technology/c.png
-og_image: solutions/testcontainers/testcontainers_c_opengraph.png
 ---
 
+<br>
+
+<div class="solution-block">
+    <div class="solution-header"> 
+        <img src="../../assets/images/logos/wiremock/logo_square.svg"> 
+        <img src="../../assets/images/logos/doc-sections/connect.svg"> 
+        <img src="../../assets/images/logos/technology/c.svg">
+    </div>
+</div>
 
 !!! wiremock-cloud "WireMock Cloud"
 
@@ -13,7 +19,7 @@ og_image: solutions/testcontainers/testcontainers_c_opengraph.png
 
 ## Testcontainers for C/C++ module
 
-<img src="/images/solutions/testcontainers/testcontainers_c_logo_wide.png" alt="Testcontainers C" style="width: 60%; height: auto; margin-top: 1em;"/>
+<img src="../../assets/images/solutions/testcontainers/testcontainers_c_logo_wide.png" alt="Testcontainers C" style="width: 60%; height: auto; margin-top: 1em;"/>
 
 Recently we created an experimental WireMock module for
 [Testcontainers for C/C++](https://github.com/oleg-nenashev/testcontainers-c).

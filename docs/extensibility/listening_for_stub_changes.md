@@ -3,6 +3,8 @@ title: Listening for Stub Changes
 meta_title: Listening for Stub Changes
 ---
 
+<br>
+
 You can subscribe to changes in the state of WireMock's stubs via the `StubLifecycleListener` extension point.
 
 For instance, to respond after a new stub has been created you would do the following:

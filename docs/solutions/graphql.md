@@ -1,12 +1,20 @@
 ---
 title: "WireMock and GraphQL"
 meta_title: "GraphQL Solutions | WireMock"
-logo: /images/logos/technology/graphql.svg
-og_image: solutions/graphql/wiremock_graphql_opengraph.png
 ---
 
 
+<br>
 
+
+
+<div class="solution-block">
+    <div class="solution-header"> 
+        <img src="../../assets/images/logos/wiremock/logo_square.svg"> 
+        <img src="../../assets/images/logos/doc-sections/connect.svg"> 
+        <img src="../../assets/images/logos/technology/graphql.svg">
+    </div>
+</div>
 
 !!! wiremock-cloud "WireMock Cloud"
 

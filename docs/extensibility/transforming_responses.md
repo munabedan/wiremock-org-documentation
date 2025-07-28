@@ -3,6 +3,8 @@ title: Transforming Responses
 meta_title: Transforming response definitions and responses
 ---
 
+<br>
+
 Sometimes, returning wholly static responses to stub requests isn't
 practical e.g. when there are transaction IDs being passed between
 request/responses, dates that must be current. Via WireMock's extension

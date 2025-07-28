@@ -266,15 +266,12 @@
 
 
 
-
-
-
-
-
-
-
-
 <style>
+
+  .md-sidebar.md-sidebar--secondary{
+    display: none;
+  }
+
   .grid-container {
     display: grid;
     margin-left: auto;
@@ -282,7 +279,7 @@
     margin-bottom: 2rem;
     max-width: 160rem;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fill, 15rem);
+    grid-template-columns: repeat(auto-fill, 12rem);
     vertical-align: middle;
   }
 
@@ -291,8 +288,8 @@
     border: 0.2rem solid #18253d;
     color: #18253d;
     border-radius: 1rem;
-    height: 6rem;
-    width: 15rem;
+    height: 5rem;
+    width: 12rem;
     font-size: large;
     font-weight: 600;
     vertical-align: middle;
@@ -304,7 +301,7 @@
   }
 
   .card > img {
-    width: 4rem;
+    width: 3rem;
     height: auto;
     border-style: none;
     margin-top: 10px;
@@ -313,5 +310,12 @@
     margin-left: 10px;
   }
 
-  
+  .md-content a:hover {
+    text-decoration: underline; 
+  }
+
+  .md-content a {
+    color: #18253d !important;
+  }
+
 </style>
