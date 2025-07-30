@@ -28,8 +28,12 @@ message HelloReply {
 }
 ```
 
+{% raw %}
+
 #### C# option
 Start the WireMock.Net server and define the mapping for the Grpc call:
+
+
 ```csharp
 // Read the 'greet.proto' ProtoDefinition file as text and store it in a variable
 var protoDefinitionText = File.ReadAllText(@"c:\grpc\greet.proto");
@@ -77,6 +81,8 @@ server
     .WithTransformer()
   );
 ```
+
+{% endraw %}
 
 ### Multiple Proto Definition files
 If you have multiple proto files, you have to follow these 2 rules:

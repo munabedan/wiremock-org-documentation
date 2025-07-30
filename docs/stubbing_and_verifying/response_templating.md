@@ -52,7 +52,7 @@ Response templating can also be disabled on a per-stub basis when using the `bod
 
 Custom Handlebars helpers can be registered via an extension point. See [Adding Template Helpers](../extensibility/adding_template_helpers.md) for details.
 
-Similarly custom model data providers can be registered as extensions. See [Adding Template Model Data](.../extensibility/adding_template_model_data.md) for details.
+Similarly custom model data providers can be registered as extensions. See [Adding Template Model Data](../extensibility/adding_template_model_data.md) for details.
 
 ## Applying templating in local mode
 
