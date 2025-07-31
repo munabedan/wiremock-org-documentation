@@ -3,6 +3,7 @@ docs_dir: ./docs
 
 
 nav:
+  - WireMock .NET: index.md
   - What is WireMock.Net: What-Is-WireMock.Net.md
   - WireMock.Org: WireMock.Org.md
   - References: References.md
@@ -14,10 +15,21 @@ nav:
   - Proxying: Proxying.md
   - Stubbing: Stubbing.md
   - Webhook: Webhook.md
+  - WireMock commandline parameters: WireMock-commandline-parameters.md
   - Request Matching:
     - Request Matching: Request-Matching.md
     - Request Matchers: Request-Matchers.md
     - Request Matching Tips: Request-Matching-Tips.md
+    - Request Matcher FormUrlEncodedMatcher: Request-Matcher-FormUrlEncodedMatcher.md
+    - Request Matching CSharpCode: Request-Matching-CSharpCode.md
+    - Request Matching GraphQLMatcher: Request-Matching-GraphQLMatcher.md
+    - Request Matching JsonMatcher: Request-Matching-JsonMatcher.md
+    - Request Matching JsonPartialMatcher: Request-Matching-JsonPartialMatcher.md
+    - Request Matching JsonPartialWildcardMatcher: Request-Matching-JsonPartialWildcardMatcher.md
+    - Request Matching JsonPathMatcher: Request-Matching-JsonPathMatcher.md
+    - Request Matching MimePartMatcher: Request-Matching-MimePartMatcher.md
+    - Request Matching ProtoBuf: Request-Matching-ProtoBuf.md
+
   - Response Templating: Response-Templating.md
   - Unit Testing:
     - Using WireMock in UnitTests: Using-WireMock-in-UnitTests.md

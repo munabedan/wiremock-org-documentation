@@ -57,18 +57,18 @@ header.md-header {
   padding-right: 100px;
 }
 
-header {
-  padding-top: 1rem;
+header{
+padding-top: 1rem;
 }
 
 .md-header--shadow {
   box-shadow: none;
 }
 
-.md-sidebar--secondary {
-  padding-top: 5rem;
+.md-sidebar--secondary{
+  padding-top: 3rem;
 }
-.md-container {
+.md-container{
   padding-top: 2rem;
 }
 
@@ -175,6 +175,7 @@ header {
 }
 
 header.md-header > nav {
+  height: 88px;
   padding: 0;
 }
 
@@ -268,6 +269,8 @@ header .md-search__input::placeholder {
   align-items: center;
   margin-left: 24px;
 }
+
+
 
 .header__links a {
   color: #18253d !important;
@@ -485,35 +488,4 @@ header .md-search__input::placeholder {
   width: auto;
   height: 6rem;
   border-style: none;
-}
-
-/*tabs*/
-
-.md-tabs {
-  background-color: transparent;
-  color: black !important;
-}
-
-.md-tabs .md-tabs__list {
-  background-color: white;
-}
-
-.md-header__inner {
-  background-color: white;
-}
-
-/*tabs*/
-.md-tabs__item--active {
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: none !important;
-}
-
-.md-tabs__item {
-  border-bottom: 1px solid #ccc;
-}
-
-.md-tabs__list {
-  justify-content: center; 
 }

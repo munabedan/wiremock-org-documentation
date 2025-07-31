@@ -13,7 +13,7 @@ theme:
   name: material
   palette:
     scheme: wiremock
-  logo: assets/images/logos/wiremock/logo_wide.svg
+  logo: assets/images/logo_wide.svg
   locale: en
   features:
     - navigation.instant
@@ -21,9 +21,9 @@ theme:
     - navigation.instant.progress
     - navigation.tracking
     - navigation.sections
-    - navigation.footer
     - content.code.copy
-
+    - navigation.tabs
+    - navigation.tabs.sticky
 
 
 
@@ -57,6 +57,10 @@ plugins:
       generate_home_index: false
       use_page_titles: false 
       home_text: "Documentation"
+  - redirects:
+      redirect_maps:
+        'index.md': 'java/index.md'
+        
 
 extra:
   wiremock_version: 3.13.1
