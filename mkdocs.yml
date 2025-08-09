@@ -70,6 +70,7 @@ extra:
 
 extra_css:
   - assets/stylesheets/extra.css
+  - assets/scripts/extra.js
 
 watch:
   - docs
