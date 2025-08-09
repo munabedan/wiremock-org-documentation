@@ -6,7 +6,7 @@ General WireMock contributing guide is available [here](https://github.com/wirem
 
 ## Discussing changes 
 
-Make sure to join the community Slack as documented in the contributing guide. After that, all changes can be discussed in the `#help-contributing` or `#documentation` channels. Do not hesitate to ask there is you hit an obstacle.
+Make sure to join the community [Slack](https://slack.wiremock.org/) as documented in the contributing guide. After that, all changes can be discussed in the `#help-contributing` or `#documentation` channels. Do not hesitate to ask there is you hit an obstacle.
 
 ## Preparing the developer environment
 
@@ -17,59 +17,111 @@ Ideally you should set up a python [virtual environment](https://realpython.com/
 
 ## File Structure
 
-All documentation sources should be written as regular Markdown files placed in the documentation directory. In this project we make use of the [mkdocs-monorepo-plugin](https://backstage.github.io/mkdocs-monorepo-plugin/) to allow us to have multiple documentation sets of documentation in a single mkdocs folder. This allows us to have multiple `docs/` folders: docs, dotnet and v4. By convention each homepage is should be named index.md.
-
+All documentation sources should be written as regular Markdown files placed in the documentation directory. In this project we make use of the [mkdocs-monorepo-plugin](https://backstage.github.io/mkdocs-monorepo-plugin/) to allow us to have multiple documentation sets of documentation in a single mkdocs folder. This allows us to have multiple `docs/` folders: `java`, `dotnet` and `v4`. 
 
 ```
-├── dev                           # Convenient developer scripts
+.
+├── dev                           # dev scripts
 │   ├── build.sh
 │   ├── clean.sh
 │   ├── common.sh
 │   ├── serve.sh
 │   └── setup_env.sh
-│  
-├── docs                          # Wiremock documentation
+├── docs                          # mkdocs entry point
 │   ├── assets
-│   │   ├── images                # Image files
-│   │   └── stylesheets           # CSS files
-│   ├── index.md                  # Wiremock documentation entry point
-│   └── getting_started
-│       ├── overview.md
-│       └── ...
-|
+│   │   ├── images
+│   │   ├── scripts
+│   │   └── stylesheets
+│   └── index.md
 ├── dotnet                        # .NET documentation
 │   ├── docs
-│   │   ├── index.md              # .NET documentation entry point
-│   │   └── ...
-│   ├── mkdocs.yml                # .NET documentation config 
-│   └── nav.yml                   # .NET documentation navigation config
-│                  
-├── v4                            # WireMock Beta documentation
+│   |   ├── index.md
+│   |   └── ...
+│   └── mkdocs.yml
+├── java                          # JAVA documentation
 │   ├── docs
-│   │   ├── index.md              # WireMock Beta documentation entry point
+│   │   ├── index.md
 │   │   └── ...
-│   └── mkdocs.yml                # WireMock Beta documentation config
-│         
-├── mkdocs.yml                    # WireMock documentation config
-├── nav.yml                       # WireMock documentation navigation config
-├── overrides                     # Custom mkdocs theme files
-├── README.md                     
+│   └── mkdocs.yml
+├── v4                            # Beta documentation
+│   ├── docs
+│   │   ├── index.md
+│   │   └── ...
+│   └── mkdocs.yml
+├── mkdocs.yml                    # config file
+├── nav.yml                       
+├── overrides                     # custom pages
+│   ├── main.html
+│   └── partials
+│       ├── copyright.html
+│       ├── header.html
+│       ├── nav.html
+│       ├── search.html
+│       └── tabs.html
+├── README.md
 └── requirements.txt
 
 ```
 
 ## Writing your docs
 
-Mkdocs pages must be authored in [Markdown](https://daringfireball.net/projects/markdown/). MkDocs uses the Python-Markdown library to render Markdown documents to HTML. In addition to the base Markdown [syntax](https://daringfireball.net/projects/markdown/syntax) MkDocs includes support for extending the syntax with [Python-Markdown extensions](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/) these can be enabled or disabled as needed in the mkdocs.yml config file.
+Mkdocs pages must be authored in [Markdown](https://daringfireball.net/projects/markdown/). MkDocs uses the Python-Markdown library to render Markdown documents to HTML. In addition to the base Markdown [syntax](https://daringfireball.net/projects/markdown/syntax) MkDocs includes support for extending the syntax with [Python-Markdown extensions](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/) these can be enabled or disabled as needed in the `mkdocs.yml` config file.
 
-### Configure Pages and Navigation
+### Creating a new documentation set
 
-The [nav](https://www.mkdocs.org/user-guide/configuration/#nav) setting in the `mkdocs.yml` file defines which pages are included in the global site navigation menu as well as the structure of that menu. In this project all the navigation configuration is in a separate file `nav.yml` which is then linked back to the documentation using the `INHERIT: nav.yml` tag.
+In the documentation structure there are three documentation sets `Java`, `.NET` and `Beta`.  To create a new documentation set do the following:
+
+  - Create a subfolder within the `root` folder, with a `mkdocs.yml` with the `site_name` and `nav` configured, as well as a `docs/` folder with an `index.md`
+
+      ```yml
+      site_name: java
+      docs_dir: ./docs
+
+      nav:
+        - WireMock Java: index.md
+        - Getting started:
+          - Overview: getting_started/overview.md
+          - Quick Start API Mocking with Java and JUnit 4: getting_started/quick_start_api_mocking_with_java_junit_4.md
+          - Download and Install: getting_started/download_and_installation.md
+          - WireMock Tutorials: getting_started/wiremock_tutorials.md
+          - Frequently Asked Questions: getting_started/frequently_asked_questions.md
+          - Community Resources: getting_started/community_resources.md
+      ...
+      ```
+
+
+
+      > Note: Each docs folder must have an `index.md` entry point configured in the `nav` to enable navigation to that set of documentation. 
+      > ```yml
+      > nav:
+      >    - WireMock Java: index.md
+      > ```
+
+  - Back in in the root `mkdocs.yml`, use the `!include` syntax in the `nav.yml` in the `root` folder to link to the subfolder `mkdocs.yml`
+
+      ```yml
+      nav:
+        - WireMock Java: "!include ./java/mkdocs.yml" 
+        
+        - WireMock .NET: "!include ./dotnet/mkdocs.yml"
+
+        - WireMock Beta: "!include ./v4/mkdocs.yml"
+      ```
+
+### Pages and Navigation
+
+To add a new document to your MkDocs project, follow these steps:
+
+  - Create a new Markdown file inside the `docs/` subfolder within the approrite documentation set. An example would `java/docs/index.md`.
+  - Update the `mkdocs.yml` in the documentation set, if you want the new document to appear in the site's navigation. 
+
+The [nav](https://www.mkdocs.org/user-guide/configuration/#nav) setting in the `mkdocs.yml` file defines which pages are included in the global site navigation menu as well as the structure of that menu.
 
 Here is a sample navigation configuration from the project:
 
 ```yml
 nav:
+  - WireMock Java: index.md
   - Getting started:
     - Overview: getting_started/overview.md
     - Quick Start API Mocking with Java and JUnit 4: getting_started/quick_start_api_mocking_with_java_junit_4.md
@@ -77,18 +129,7 @@ nav:
     - WireMock Tutorials: getting_started/wiremock_tutorials.md
     - Frequently Asked Questions: getting_started/frequently_asked_questions.md
     - Community Resources: getting_started/community_resources.md
-
-  - Running Wiremock: 
-    - WireMock standalone service: running_wiremock/wiremock_standalone_service.md
-    - Running in docker: running_wiremock/running_in_docker.md
-    - Running as a standalone process: running_wiremock/running_as_a_standalone_process.md
-    - Administration API: running_wiremock/administration_api.md
-
-  - WireMock .NET: "!include ./dotnet/mkdocs.yml"
-
-  - WireMock Beta: "!include ./v4/mkdocs.yml"
-
-...
+ ...
 ```
 
 Navigation subsections can be created by listing related pages together under a section title.
@@ -238,9 +279,60 @@ Without `{% raw %}`, MkDocs will try to render `{{ variable }}` as a real variab
 
 </blockquote>
 
+### Overrides
+
+MkDocs Material allows for [extensive customization](https://squidfunk.github.io/mkdocs-material/customization/#extending-the-theme) through theme extension and overrides, enabling users to modify the appearance and behavior of their documentation site without directly altering the core theme files. It involves creating a `custom_dir` (often named `overrides`) in the project root, alongside the `mkdocs.yml` file. This contains all custom templates.
+
+This project has the following pages customized:
+
+  ```
+  .
+  └── overrides                     # custom_dir
+      ├── main.html
+      └── partials
+          ├── copyright.html
+          ├── header.html
+          ├── nav.html
+          ├── search.html
+          └── tabs.html
+  ```
+
+The primary customization involves the `header.html` file. This file contains the static links used in the header navigation dropdowns. These links can be modified or updated directly within `header.html`, below is an example of a dropdown in the `header.html` file.
+
+```html
+    <div class="header__links">
+      <div class="dropdown">
+        <a href="https://wiremock.org/docs" class="header__link"> Docs </a>
+        <div class="dropdown-content">
+          <a href="https://wiremock.org/docs/"> WireMock </a>
+
+          <a href="https://wiremock.org/docs/mock-api-templates">
+            Mock API Templates
+          </a>
+
+          <a
+            href="https://docs.wiremock.io/getting-started/?utm_source=wiremock.org&amp;utm_medium=masthead_doc-links&amp;utm_campaign=2022_baseline"
+          >
+            WireMock Cloud
+          </a>
+
+          <a href="https://wiremock.org/external-resources">
+            External Resources
+          </a>
+
+          <a href="https://wiremock.org/2.x/docs/"> WireMock 2.x (Archive) </a>
+        </div>
+      </div>
+
+    ...
+
+    </div>
+
+```
+
 ## Build and Serve
 
-The repo includes a few convenience scripts to help setup and run the project in the 'dev' directory.
+The repo includes a few convenience scripts to help setup and run the project in the `dev` directory. 
 
 - Setup
 
@@ -270,8 +362,15 @@ This builds the mkdocs documentation which generates a `site` folder with the re
 
 Mkdocs provides [additional options](https://www.mkdocs.org/user-guide/cli/) for the commandline interface if needed.
 
+## Additional resources
 
+Here are some additional resources on Mkdocs, Themes and Plugins used in the project.
 
+  - [Mkdocs Material Theme documentation](https://squidfunk.github.io/mkdocs-material/getting-started/)
+  - [MKdocs documentation](https://www.mkdocs.org/getting-started/)
+  - [Mkdocs Monorepo plugin](https://backstage.github.io/mkdocs-monorepo-plugin/)
+  - [Mkdocs Macros plugin](https://mkdocs-macros-plugin.readthedocs.io/en/latest/)
+  - [Pymdownx Extensions plugin](https://facelessuser.github.io/pymdown-extensions/)
 
 
 
