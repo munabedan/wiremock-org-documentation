@@ -104,9 +104,6 @@ set class = class ~ " md-header--shadow md-header--lifted" %} {% elif
     
   </nav>
 
-  <!-- Navigation tabs (sticky) -->
-  {% if "navigation.tabs.sticky" in features %} {% if "navigation.tabs" in
-  features %} {% include "partials/tabs.html" %} {% endif %} {% endif %}
 
   <!-- Button to open search modal -->
   {% if "material/search" in config.plugins %} {% set search =
@@ -122,3 +119,6 @@ set class = class ~ " md-header--shadow md-header--lifted" %} {% elif
   <!-- Search interface -->
   {% include "partials/search.html" %} {% endif %} {% endif %}
 </header>
+
+
+

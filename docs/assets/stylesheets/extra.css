@@ -504,16 +504,24 @@ header .md-search__input::placeholder {
 
 /*tabs*/
 .md-tabs__item--active {
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: none !important;
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  border-right: none !important;
+  background-color: white !important;
+  border-left: 3px solid #0fb2ef;
+  
 }
 
 .md-tabs__item {
-  border-bottom: 1px solid #ccc;
+  background-color: #f2f2f2;
+  border-right: 1px solid #d2d2d2;
 }
 
 .md-tabs__list {
-  justify-content: center; 
+  flex-direction: column;
+  margin-bottom: 2rem;
 }
+
+
+/*scroll*/
+
