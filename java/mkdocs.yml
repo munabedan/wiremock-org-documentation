@@ -3,6 +3,7 @@ docs_dir: ./docs
 
 nav:
   - WireMock Java: index.md
+  - v4 Beta: v4_beta.md
   - Getting started:
     - Overview: getting_started/overview.md
     - Quick Start API Mocking with Java and JUnit 4: getting_started/quick_start_api_mocking_with_java_junit_4.md

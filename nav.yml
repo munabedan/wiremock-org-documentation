@@ -3,6 +3,4 @@ nav:
   
   - WireMock .NET: "!include ./dotnet/mkdocs.yml"
 
-  - WireMock Beta: "!include ./v4/mkdocs.yml"
-
 

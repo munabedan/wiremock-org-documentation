@@ -173,25 +173,16 @@ set class = class ~ " md-header--shadow md-header--lifted" %} {% elif
           >
             Try WireMock Cloud
           </a>
-          <span class="masthead__cta-note"
-            >Free forever. No credit card needed</span
-          >
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Button to open search modal -->
-  {% if "material/search" in config.plugins %} {% set search =
-  config.plugins["material/search"] | attr("config") %}
-
-  <!-- Check if search is actually enabled - see https://t.ly/DT_0V -->
-  {% if search.enabled %}
-  <label class="md-header__button md-icon" for="__search">
-    {% set icon = config.theme.icon.search or "material/magnify" %} {% include
-    ".icons/" ~ icon ~ ".svg" %}
-  </label>
-
-  <!-- Search interface -->
-  {% include "partials/search.html" %} {% endif %} {% endif %}
+  <!-- Keep the search overlay but remove the button -->
+  {% if "material/search" in config.plugins %}
+    {% set search = config.plugins["material/search"] | attr("config") %}
+    {% if search.enabled %}
+      {% include "partials/search.html" %}
+    {% endif %}
+  {% endif %}
 </header>

@@ -70,7 +70,9 @@ extra:
 
 extra_css:
   - assets/stylesheets/extra.css
-  - assets/scripts/extra.js
+
+extra_javascript:
+  - assets/javascripts/sidebar-search.js
 
 watch:
   - docs
