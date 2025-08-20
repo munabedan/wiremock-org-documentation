@@ -107,13 +107,6 @@ header {
     order: 3;
   }
 
-  label[for="__search"] {
-    order: 2;
-  }
-
-  .md-search {
-    order: 2;
-  }
 
   .md-header__title {
     display: none;
@@ -137,6 +130,9 @@ header {
     margin-left: auto;
     margin-right: auto;
     max-width: 61rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
   }
 
   .md-sidebar__scrollwrap {
@@ -176,6 +172,10 @@ header {
 
 header.md-header > nav {
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 header.md-header > nav > a.md-logo {
@@ -266,7 +266,8 @@ header .md-search__input::placeholder {
 .header__links {
   display: flex;
   align-items: center;
-  margin-left: 24px;
+  margin-left: auto;
+  gap: 16px;
 }
 
 .header__links a {
@@ -290,16 +291,12 @@ header .md-search__input::placeholder {
   color: var(--md-typeset-a-color);
   display: flex;
   align-items: center;
-  margin-left: 16px;
 }
 
 .header__link:hover {
   color: var(--color-default-outline);
 }
 
-.header__link:first-child {
-  margin-left: 16px;
-}
 
 .header__link-icon {
   margin-left: 8px;
@@ -419,6 +416,217 @@ header .md-search__input::placeholder {
   font-size: 13px;
   color: black;
   font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Simple sidebar search */
+.md-nav__search-simple {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-default-outline);
+  margin-bottom: 1rem;
+}
+
+.md-nav__search-simple .md-search__form-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.md-nav__search-simple .md-search__input {
+  width: 100%;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  border: 1px solid var(--md-typeset-a-color);
+  border-radius: 6px;
+  background: transparent;
+  font-size: 0.9rem;
+}
+
+.md-nav__search-simple .md-search__input::placeholder {
+  color: var(--md-typeset-color);
+}
+
+.md-nav__search-simple .md-search__input:focus {
+  outline: none;
+  border-color: var(--md-typeset-a-color);
+  box-shadow: 0 0 0 2px rgba(15, 178, 239, 0.2);
+}
+
+.md-nav__search-simple .md-search__icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--md-typeset-a-color);
+  cursor: pointer;
+  width: 1.2rem;
+  height: 1.2rem;
+  pointer-events: none;
+}
+
+/* Simple sidebar tabs - just make them vertical */
+.md-tabs--sidebar .md-tabs__list {
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+/* Ensure search overlay is full-screen when active */
+.md-search[data-md-state="active"] {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1000 !important;
+  background: rgba(0, 0, 0, 0.54) !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.md-search[data-md-state="active"] * {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.md-search[data-md-state="active"] .md-search__inner {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  background: white !important;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  visibility: visible !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.md-search[data-md-state="active"] .md-search__form {
+  display: flex !important;
+  align-items: center !important;
+  padding: 1rem !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+  background: white !important;
+  visibility: visible !important;
+}
+
+.md-search[data-md-state="active"] .md-search__input {
+  display: block !important;
+  visibility: visible !important;
+  flex: 1 !important;
+  font-size: 1.2rem !important;
+  padding: 0.5rem !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  margin-right: 1rem !important;
+  background: white !important;
+  color: black !important;
+}
+
+.md-search[data-md-state="active"] .md-search__icon {
+  display: inline-flex !important;
+  visibility: visible !important;
+  width: 24px !important;
+  height: 24px !important;
+  color: #666 !important;
+  cursor: pointer !important;
+}
+
+.md-search[data-md-state="active"] .md-search__options {
+  display: flex !important;
+  visibility: visible !important;
+  align-items: center !important;
+}
+
+.md-search[data-md-state="active"] .md-search__options button {
+  display: inline-flex !important;
+  visibility: visible !important;
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 0.5rem !important;
+}
+
+.md-search[data-md-state="active"] .md-search__output {
+  flex: 1 !important;
+  overflow-y: auto !important;
+  display: block !important;
+  visibility: visible !important;
+  background: white !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.md-search[data-md-state="active"] .md-search__scrollwrap {
+  height: 100% !important;
+  overflow-y: auto !important;
+  visibility: visible !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 2rem !important;
+  box-sizing: border-box !important;
+}
+
+.md-search[data-md-state="active"] .md-search-result {
+  padding: 0 !important;
+  display: block !important;
+  visibility: visible !important;
+  color: black !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.md-search[data-md-state="active"] .md-search-result__meta {
+  display: block !important;
+  visibility: visible !important;
+  color: #666 !important;
+  margin-bottom: 1rem !important;
+}
+
+.md-search[data-md-state="active"] .md-search-result__list {
+  display: block !important;
+  visibility: visible !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.md-search[data-md-state="active"] .md-search-result__item {
+  display: block !important;
+  visibility: visible !important;
+  margin-bottom: 1rem !important;
+  padding: 1rem !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 4px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Ensure proper spacing for the Try WireMock Cloud section */
+.masthead__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* Fix header layout to prevent stacking */
+@media (min-width: 1219px) {
+  .md-header__inner .md-header__title {
+    flex: 1;
+  }
+  
+  .header__links {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
 }
 
 .md-footer-meta {

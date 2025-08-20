@@ -26,10 +26,44 @@
 %} {% set class = class ~ " md-nav--lifted" %} {% endif %} {% if "toc.integrate"
 in features %} {% set class = class ~ " md-nav--integrated" %} {% endif %}
 
-<!-- Navigation tabs (sticky) -->
-{% if "navigation.tabs.sticky" in features %} {% if "navigation.tabs" in
-features %} {% include "partials/tabs.html" %} {% endif %} {% endif %} {% import
-"partials/nav-item.html" as item with context %}
+<!-- Search in sidebar -->
+{% if "material/search" in config.plugins %} 
+  {% set search = config.plugins["material/search"] | attr("config") %}
+  {% if search.enabled %}
+    <div class="md-nav__search-simple">
+      <form class="md-search__form" name="search" role="search" onsubmit="return false;">
+        <input
+          type="text"
+          class="md-search__input"
+          name="query"
+          aria-label="{{ lang.t('search.placeholder') }}"
+          placeholder="{{ lang.t('search.placeholder') }}"
+          autocapitalize="off"
+          autocorrect="off"
+          autocomplete="off"
+          spellcheck="false"
+          data-md-component="search-query"
+          required
+        />
+        <label class="md-search__icon md-icon" for="__search">
+          {% set icon = config.theme.icon.search or "material/magnify" %} 
+          {% include ".icons/" ~ icon ~ ".svg" %}
+        </label>
+      </form>
+    </div>
+    
+  {% endif %} 
+{% endif %}
+
+<!-- Version selector tabs -->
+{% set features = config.theme.features or [] %}
+{% if "navigation.tabs" in features %}
+  <div class="md-tabs md-tabs--sidebar">
+    {% include "partials/tabs.html" %}
+  </div>
+{% endif %}
+
+{% import "partials/nav-item.html" as item with context %}
 
 <!-- Navigation -->
 <nav class="{{ class }}" aria-label="{{ lang.t('nav') }}" data-md-level="0">
@@ -46,6 +80,7 @@ features %} {% include "partials/tabs.html" %} {% endif %} {% endif %} {% import
     </a>
     {{ config.site_name }}
   </label>
+
 
   <!-- Repository information -->
   {% if config.repo_url %}
