@@ -1,10 +1,91 @@
 :root {
   --md-admonition-icon--wiremock-cloud: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3Csvg width='64' height='64' version='1.1' id='svg8' sodipodi:docname='wiremock_cloud_favicon.svg' inkscape:version='1.2.2 (732a01da63, 2022-12-09)' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Cdefs id='defs12' /%3E%3Csodipodi:namedview id='namedview10' pagecolor='%23ffffff' bordercolor='%23000000' borderopacity='0.25' inkscape:showpageshadow='2' inkscape:pageopacity='0.0' inkscape:pagecheckerboard='0' inkscape:deskcolor='%23d1d1d1' showgrid='false' inkscape:zoom='11.40799' inkscape:cx='41.199195' inkscape:cy='22.96636' inkscape:window-width='3440' inkscape:window-height='1369' inkscape:window-x='-8' inkscape:window-y='-8' inkscape:window-maximized='1' inkscape:current-layer='svg8' /%3E%3C!--http://www.w3.org/TR/SVG/paths.html%23PathDataEllipticalArcCommands--%3E%3Cpath d='M 15.188661,34.696938 H 7.7371732 L 0.12543024,11.060461 H 8.1778506 Z' fill='%230fb2ef' id='path348' style='stroke-width:0.248509' /%3E%3Cpath d='M 15.188661,34.696938 H 7.8974013 L 14.868167,11.060461 h 8.092503 z' fill='%230fb2ef' id='path350' style='stroke-width:0.248509' /%3E%3Cpath d='M 26.266025,34.696938 H 22.51998 L 14.868192,11.060461 h 8.092478 l 6.730297,23.636477 z' fill='%230fb2ef' id='path352' style='stroke-width:0.248509' /%3E%3Cpath d='m 29.690967,34.696938 h -7.130918 l 6.850596,-23.636477 h 8.052421 z' fill='%230fb2ef' id='path354' style='stroke-width:0.248509' /%3E%3Cpath d='m 37.602982,11.060461 h 3.746006 l 7.651825,23.636477 H 40.908387 L 34.178038,11.060461 Z' fill='%23f59122' id='path356' style='stroke-width:0.248509' /%3E%3Cpath d='m 48.680243,11.060461 h 7.451515 l 7.611819,23.636477 h -8.052422 z' fill='%23f59122' id='path358' style='stroke-width:0.248509' /%3E%3Cpath d='m 48.680243,11.060461 h 7.291236 l -6.970666,23.636477 h -8.092426 z' fill='%23f59121' id='path360' style='stroke-width:0.248509' /%3E%3Cpath d='m 34.178038,11.060461 h 7.130943 l -6.850633,23.636477 h -8.052409 z' fill='%23f59121' id='path362' style='stroke-width:0.248509' /%3E%3Crect width='63.498085' height='18.200357' fill='%230fb2ef' id='rect153' x='0.33374342' y='37.5061' style='stroke-width:2.22236' /%3E%3Cpath d='m 13.417265,53.669743 c 2.969757,0 4.610938,-1.582568 5.548756,-3.20421 l -2.38362,-1.152735 c -0.547062,1.074584 -1.719332,1.895173 -3.165136,1.895173 -2.266392,0 -3.9857256,-1.817023 -3.9857256,-4.278796 0,-2.461771 1.7193336,-4.278793 3.9857256,-4.278793 1.445804,0 2.618074,0.840129 3.165136,1.895173 l 2.38362,-1.17227 C 18.04774,41.751641 16.387022,40.18861 13.417265,40.18861 c -3.8098833,0 -6.8382549,2.735303 -6.8382549,6.740565 0,4.005264 3.0283716,6.740568 6.8382549,6.740568 z m 7.141337,-0.234454 h 2.481309 V 40.403527 h -2.481309 z m 9.318345,0.234454 c 3.126059,0 5.001694,-2.266393 5.001694,-4.96262 0,-2.676687 -1.875635,-4.943083 -5.001694,-4.943083 -3.106524,0 -4.982158,2.266396 -4.982158,4.943083 0,2.696227 1.875634,4.96262 4.982158,4.96262 z m 0,-2.207781 c -1.543492,0 -2.403161,-1.26996 -2.403161,-2.754839 0,-1.465339 0.859669,-2.735301 2.403161,-2.735301 1.543491,0 2.422695,1.269962 2.422695,2.735301 0,1.484879 -0.879204,2.754839 -2.422695,2.754839 z m 13.211752,1.973327 h 2.48131 v -9.436792 h -2.48131 v 6.388885 c -0.429833,0.547057 -1.19181,1.07458 -2.149167,1.07458 -1.055045,0 -1.738869,-0.429831 -1.738869,-1.73887 v -5.724595 h -2.481311 v 6.70149 c 0,1.836558 0.976894,2.969756 3.047909,2.969756 1.543491,0 2.676689,-0.703364 3.321438,-1.426264 z m 11.430876,0 h 2.500848 V 40.403527 h -2.500848 v 4.806317 c -0.742438,-0.957356 -1.797483,-1.445804 -2.911143,-1.445804 -2.403158,0 -4.180371,1.875638 -4.180371,4.962621 0,3.145599 1.796751,4.943082 4.180371,4.943082 1.133197,0 2.168705,-0.507986 2.911143,-1.426264 z m 0,-3.047907 c -0.429833,0.62521 -1.309037,1.07458 -2.149165,1.07458 -1.406727,0 -2.383622,-1.113657 -2.383622,-2.735301 0,-1.641179 0.976895,-2.754839 2.383622,-2.754839 0.840128,0 1.719332,0.44937 2.149165,1.074583 z' fill='%23ffffff' id='path155' style='stroke-width:2.44224' /%3E%3C/svg%3E");
-  --color-default-white: #fff;
-  --color-primary-main: #7c47fc;
-  --color-primary-light: #9a70ff;
-  --color-default-primary: #131417;
-  --color-default-outline: #d1d2d9;
+
+  /* Modern Design Tokens System */
+  
+  /* Color Palette */
+  --color-primary: #0fb2ef;
+  --color-primary-hover: #0a9dd4;
+  --color-primary-light: rgba(15, 178, 239, 0.1);
+  --color-primary-soft: rgba(15, 178, 239, 0.05);
+  
+  --color-secondary: #7c47fc;
+  --color-secondary-light: #9a70ff;
+  
+  --color-accent: #ff9505;
+  
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-background: #fafbfc;
+  --color-surface: #ffffff;
+  --color-surface-variant: #f8f9fa;
+  --color-outline: #e1e5e9;
+  --color-outline-variant: #f1f3f4;
+  
+  /* Text Colors */
+  --color-text-primary: #1a202c;
+  --color-text-secondary: #4a5568;
+  --color-text-tertiary: #718096;
+  --color-text-muted: #a0aec0;
+  
+  /* Modern Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Border Radius */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  
+  /* Spacing Scale */
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  
+  /* Typography Scale */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+  
+  /* Legacy Support */
+  --color-default-white: var(--color-white);
+  --color-primary-main: var(--color-secondary);
+  --color-primary-light: var(--color-secondary-light);
+  --color-default-primary: var(--color-text-primary);
+  --color-default-outline: var(--color-outline);
   --bg-dark: #171721;
 }
 
@@ -35,14 +116,43 @@
   margin-top: 0.5rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #0fb2ef !important;
-  font-weight: bold !important;
+/* Modern typography with proper sizing */
+.md-typeset {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+}
+
+.md-typeset h1 {
+  color: var(--color-text-primary) !important;
+  font-size: var(--font-size-3xl) !important;
+  font-weight: var(--font-weight-bold) !important;
+  margin-bottom: var(--space-4);
+}
+
+.md-typeset h2 {
+  color: var(--color-text-primary) !important;
+  font-size: var(--font-size-2xl) !important;
+  font-weight: var(--font-weight-semibold) !important;
+  margin-bottom: var(--space-3);
+}
+
+.md-typeset h3 {
+  color: var(--color-text-primary) !important;
+  font-size: var(--font-size-xl) !important;
+  font-weight: var(--font-weight-semibold) !important;
+  margin-bottom: var(--space-2);
+}
+
+.md-typeset h4 {
+  color: var(--color-text-primary) !important;
+  font-size: var(--font-size-lg) !important;
+  font-weight: var(--font-weight-medium) !important;
+  margin-bottom: var(--space-2);
+}
+
+h5, h6 {
+  color: var(--color-text-primary) !important;
+  font-weight: var(--font-weight-medium) !important;
 }
 
 .md-nav--integrated label {
@@ -55,10 +165,12 @@ header.md-header {
   height: 88px;
   padding-left: 100px;
   padding-right: 100px;
+  display: flex;
+  align-items: center;
 }
 
 header{
-padding-top: 1rem;
+padding-top: 0;
 }
 
 .md-header--shadow {
@@ -68,12 +180,24 @@ padding-top: 1rem;
 .md-sidebar--secondary{
   padding-top: 3rem;
 }
+
+/* Hide duplicate search elements completely */
+.md-sidebar--secondary .md-search,
+.md-sidebar--secondary .md-nav__search,
+.md-sidebar--secondary [data-md-component="search"] {
+  display: none !important;
+  visibility: hidden !important;
+}
 .md-container{
   padding-top: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .md-content {
-  margin-bottom: 10rem;
+  margin-bottom: var(--space-16);
+  position: relative;
+  z-index: 1;
 }
 
 .md-typeset :target {
@@ -144,8 +268,9 @@ padding-top: 1rem;
   }
 
   .md-sidebar {
-    top: 110px !important;
-  }
+  top: 110px !important;
+  z-index: 5 !important;
+}
 
   [dir="ltr"]
     .md-nav--integrated
@@ -177,15 +302,23 @@ padding-top: 1rem;
 header.md-header > nav {
   height: 88px;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 88px;
 }
 
 header.md-header > nav > a.md-logo {
   height: 42px;
   padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 header.md-header > nav > a.md-logo > img {
   height: 42px !important;
+  display: block;
 }
 
 /* Hide the current page title in the header */
@@ -268,12 +401,14 @@ header .md-search__input::placeholder {
   display: flex;
   align-items: center;
   margin-left: 24px;
+  height: 100%;
+  min-height: 88px;
 }
 
 
 
 .header__links a {
-  color: #18253d !important;
+  color: var(--color-text-primary) !important;
 }
 
 .header__links a:hover {
@@ -294,6 +429,9 @@ header .md-search__input::placeholder {
   display: flex;
   align-items: center;
   margin-left: 16px;
+  height: 100%;
+  min-height: 88px;
+  padding: 0 var(--space-2);
 }
 
 .header__link:hover {
@@ -398,11 +536,14 @@ header .md-search__input::placeholder {
 
 .md-sidebar--primary {
   top: 88px;
+  z-index: 5 !important;
 }
 
 .masthead__cta a {
-  display: block;
-  margin-bottom: 0.25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
   padding: 12px 24px;
   color: #fff !important;
   font-family: "DMSans", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial,
@@ -415,13 +556,30 @@ header .md-search__input::placeholder {
   border: 0 !important;
   border-radius: 4px;
   cursor: pointer;
+  height: 40px;
+  min-height: 40px;
+  white-space: nowrap;
 }
 
 .masthead__cta-note {
   display: block;
   font-size: 13px;
-  color: black;
+  color: var(--color-text-primary);
   font-weight: 500;
+}
+
+/* Override Material theme default footer styles */
+.md-footer {
+  background-color: var(--bg-dark) !important;
+  color: var(--color-text-secondary) !important;
+}
+
+/* Ensure all footer-related elements are dark */
+.md-footer,
+.md-footer *,
+.md-footer-meta,
+.md-footer-meta * {
+  background-color: var(--bg-dark) !important;
 }
 
 .md-footer-meta {
@@ -430,17 +588,23 @@ header .md-search__input::placeholder {
   float: left;
 
   clear: both;
-  color: #7d93bd !important;
+  color: var(--color-text-secondary) !important;
   animation: intro 0.3s both;
   animation-delay: 0.45s;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 1;
+  padding-top: var(--space-8);
+  margin-top: var(--space-16);
+  background-color: var(--bg-dark) !important;
 }
 
 .page__footer {
   max-width: 1280px;
+  background-color: var(--bg-dark);
 }
 
 .page__footer .page__footer-copyright {
@@ -450,42 +614,313 @@ header .md-search__input::placeholder {
   clear: both;
   margin-top: 2em;
   padding: 0 1em 2em;
+  background-color: var(--bg-dark);
 }
 
 .page__footer-copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #7d93bd !important;
+  color: var(--color-text-secondary) !important;
+  padding-top: var(--space-6);
+}
+
+.page__footer-copyright * {
+  color: var(--color-text-secondary) !important;
+}
+
+.footer-copyright-description {
+  color: var(--color-text-secondary) !important;
 }
 
 .page__footer-copyright .short-logo {
   width: 114px;
   height: 39px;
+  margin-bottom: var(--space-4);
 }
 
 .body {
   max-width: 1200px !important;
 }
 
+/* Ensure search overlay is full-screen when active */
+.md-search[data-md-state="active"] {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1000 !important;
+  background: rgba(0, 0, 0, 0.54) !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.md-search[data-md-state="active"] * {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.md-search[data-md-state="active"] .md-search__inner {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  background: white !important;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  visibility: visible !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.md-search[data-md-state="active"] .md-search__form {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  padding: 1.5rem 2rem !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+  background: white !important;
+  visibility: visible !important;
+  gap: 1rem !important;
+  min-height: 80px !important;
+  flex-shrink: 0 !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.md-search[data-md-state="active"] .md-search__input {
+  display: block !important;
+  visibility: visible !important;
+  flex: 1 !important;
+  font-size: 1.25rem !important;
+  padding: 0.75rem 1rem !important;
+  border: 2px solid #e0e0e0 !important;
+  border-radius: 8px !important;
+  margin-right: 1rem !important;
+  background: white !important;
+  color: #333 !important;
+  outline: none !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+  min-height: 48px !important;
+  line-height: 1.5 !important;
+  align-self: center !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.md-search[data-md-state="active"] .md-search__input:focus {
+  border-color: var(--color-primary, #0fb2ef) !important;
+  box-shadow: 0 0 0 3px rgba(15, 178, 239, 0.1) !important;
+}
+
+.md-search[data-md-state="active"] .md-search__input::placeholder {
+  color: #999 !important;
+  font-size: 1.1rem !important;
+}
+
+.md-search[data-md-state="active"] .md-search__icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  visibility: visible !important;
+  width: 48px !important;
+  height: 48px !important;
+  color: #666 !important;
+  cursor: pointer !important;
+  border: none !important;
+  background: transparent !important;
+  border-radius: 8px !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+  flex-shrink: 0 !important;
+  margin-right: 0.5rem !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.md-search[data-md-state="active"] .md-search__icon:hover {
+  background-color: #f5f5f5 !important;
+  color: #333 !important;
+}
+
+.md-search[data-md-state="active"] .md-search__icon svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.md-search[data-md-state="active"] .md-search__options {
+  display: flex !important;
+  visibility: visible !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  flex-shrink: 0 !important;
+  margin-left: auto !important;
+}
+
+.md-search[data-md-state="active"] .md-search__options button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  visibility: visible !important;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 0.75rem !important;
+  border-radius: 8px !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+  width: 48px !important;
+  height: 48px !important;
+  color: #666 !important;
+}
+
+.md-search[data-md-state="active"] .md-search__options button:hover {
+  background-color: #f5f5f5 !important;
+  color: #333 !important;
+}
+
+.md-search[data-md-state="active"] .md-search__options button svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.md-search[data-md-state="active"] .md-search__output {
+  flex: 1 !important;
+  overflow-y: auto !important;
+  display: block !important;
+  visibility: visible !important;
+  background: white !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.md-search[data-md-state="active"] .md-search__scrollwrap {
+  height: 100% !important;
+  overflow-y: auto !important;
+  visibility: visible !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 2rem !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+}
+
+.md-search[data-md-state="active"] .md-search-result {
+  padding: 0 !important;
+  display: block !important;
+  visibility: visible !important;
+  color: #333 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.md-search[data-md-state="active"] .md-search-result__meta {
+  display: block !important;
+  visibility: visible !important;
+  color: #666 !important;
+  margin-bottom: 1.5rem !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+}
+
+.md-search[data-md-state="active"] .md-search-result__list {
+  display: block !important;
+  visibility: visible !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.md-search[data-md-state="active"] .md-search-result__item {
+  display: block !important;
+  visibility: visible !important;
+  margin-bottom: 1rem !important;
+  padding: 1.5rem !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 8px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  background: white !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.md-search[data-md-state="active"] .md-search-result__item:hover {
+  border-color: var(--color-primary, #0fb2ef) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Fix search overlay positioning and layout */
+.md-search[data-md-state="active"] .md-search__overlay {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: transparent !important;
+  cursor: pointer !important;
+  z-index: -1 !important;
+}
+
+/* Ensure proper spacing and alignment for search form elements */
+.md-search[data-md-state="active"] .md-search__form > * {
+  margin: 0 !important;
+}
+
+/* Fix any potential Material theme conflicts */
+.md-search[data-md-state="active"] .md-search__form {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Ensure search icon and input are properly separated */
+.md-search[data-md-state="active"] .md-search__form > * {
+  position: relative !important;
+}
+
+/* Override any Material theme positioning that might place icon inside input */
+.md-search[data-md-state="active"] .md-search__input {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+/* Ensure icon is outside the input field */
+.md-search[data-md-state="active"] .md-search__icon {
+  position: static !important;
+  transform: none !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+}
+
 .solution-block {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 .solution-header {
   display: inline;
   align-items: center;
   justify-content: center;
-  min-height: 8rem;
+  min-height: 5.5rem;
   width: fit-content;
 }
 
 .solution-header > img {
   width: auto;
-  height: 6rem;
+  height: 4.5rem;
   border-style: none;
 }
+

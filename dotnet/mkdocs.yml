@@ -1,7 +1,6 @@
 site_name: dotnet
 docs_dir: ./docs
 
-
 nav:
   - WireMock .NET: index.md
   - What is WireMock.Net: What-Is-WireMock.Net.md

@@ -1,3 +1,5 @@
+# WireMock Java
+
 <p>
   WireMock is a popular open-source tool for API mock testing, with over 5
   million downloads per month. It can help you to create stable test and
@@ -279,35 +281,46 @@
     margin-bottom: 2rem;
     max-width: 160rem;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fill, 12rem);
+    grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
     vertical-align: middle;
   }
 
   .card {
     display: flex;
-    border: 0.2rem solid #18253d;
+    flex-direction: column;
+    border: 3px solid #18253d !important;
     color: #18253d;
-    border-radius: 1rem;
-    height: 5rem;
-    width: 12rem;
-    font-size: large;
+    border-radius: 0.75rem;
+    height: 5.5rem;
+    width: 10.5rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
     align-items: center;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    line-height: 1.2;
+    background-color: white;
+    position: relative;
+    z-index: 1;
   }
 
   .card-use-case {
-    font-size: large;
+    height: 7rem;
+    font-size: 0.75rem;
+    line-height: 1.15;
+    padding: 0.4rem;
   }
 
   .card > img {
-    width: 3rem;
+    width: 2rem;
     height: auto;
     border-style: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-bottom: 0.4rem;
+    flex-shrink: 0;
   }
 
   .md-content a:hover {
