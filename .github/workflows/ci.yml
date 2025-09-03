@@ -1,0 +1,77 @@
+name: Continuous Integration
+
+on:
+  push:
+    # Not needed for main, we have CD there
+    branches: [ "2.x" ]
+  pull_request:
+    branches: [ "main", "2.x" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: "true"
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.2'
+          bundler: '2.4.10'
+          bundler-cache: false
+          cache-version: 3
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+
+      - name: Update RubyGems and Co
+        run: gem update
+
+      - name: Install Ruby Bundles
+        run: bundle install
+
+      - name: Build Jekyll root site
+        run: bundle exec jekyll build --config '_config.yml' --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: development
+
+      - name: Build Jekyll 2.x
+        run: |
+          cd .submodules/wiremock.org-2.x
+          bundle exec jekyll build --config '../../_config.yml,../../_config-2.x.yml' --baseurl "${{ steps.pages.outputs.base_path }}/2.x"
+        env:
+          JEKYLL_ENV: development
+
+      # Add MkDocs build validation
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Cache MkDocs deps
+        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
+      - uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: ~/.cache
+          restore-keys: |
+            mkdocs-material-
+
+      - name: Install MkDocs dependencies
+        working-directory: ./mkdocs_site
+        run: pip install -r requirements.txt
+
+      - name: Build MkDocs site
+        working-directory: ./mkdocs_site
+        run: mkdocs build --site-dir ../_site/docs
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
