@@ -20,7 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          submodules: recursive
+          submodules: "true"
 
       # ---- Jekyll section ----
       - name: Setup Ruby
@@ -48,13 +48,9 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: Ensure Jekyll 2.x submodule initialized
-        run: git submodule update --init --recursive
-
       - name: Build Jekyll 2.x
         run: |
           cd jekyll_site/.submodules/wiremock.org-2.x
-          bundle install
           bundle exec jekyll build --config '../../_config.yml,../../_config-2.x.yml' --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
