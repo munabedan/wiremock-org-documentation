@@ -62,13 +62,12 @@ jobs:
           JEKYLL_ENV: production
 
       - name: Merge sitemaps + move Jekyll versions
-        working-directory: ./jekyll_site
         run: |
-          ruby ../.scripts/merge-sitemaps.rb
-          mkdir ../_site/2.x
-          cp -R .submodules/wiremock.org-2.x/tmp/site_2x/* ../_site/2.x/
-          mkdir ../_site/3.x
-          cp -R tmp/site_3x/* ../_site/3.x/
+          ruby jekyll_site/.scripts/merge-sitemaps.rb
+          mkdir _site/2.x
+          cp -R jekyll_site/.submodules/wiremock.org-2.x/tmp/site_2x/* _site/2.x/
+          mkdir _site/3.x
+          cp -R jekyll_site/tmp/site_3x/* _site/3.x/
 
       # ---- MkDocs section ----
       - name: Setup Python
