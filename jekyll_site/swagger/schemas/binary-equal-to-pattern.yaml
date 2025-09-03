@@ -1,7 +1,0 @@
-title: Binary equals
-type: object
-required:
-  - binaryEqualTo
-properties:
-  binaryEqualTo:
-    $ref: "base64-string.yaml"

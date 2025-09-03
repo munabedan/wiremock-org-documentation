@@ -1,7 +1,0 @@
-title: String contains
-type: object
-properties:
-  contains:
-    type: string
-required:
-  - contains
