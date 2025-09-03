@@ -50,23 +50,23 @@ jobs:
 
       - name: Build Jekyll 2.x
         run: |
-          cd jekyll_site/.submodules/wiremock.org-2.x
-          bundle exec jekyll build --config '../../_config.yml,../../_config-2.x.yml' --baseurl "${{ steps.pages.outputs.base_path }}"
+          cd jekyll_site/.submodules/wiremock.org-2.x 
+          bundle exec jekyll build --config '../../_config.yml,../../_config-2.x.yml' --baseurl "${{ steps.pages.outputs.base_path }}" --destination tmp/site_2x
         env:
           JEKYLL_ENV: production
 
       - name: Build Jekyll 3.x
         working-directory: ./jekyll_site
-        run: bundle exec jekyll build --config '_config.yml,_config-3.x.yml' --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build --config '_config.yml,_config-3.x.yml' --baseurl "${{ steps.pages.outputs.base_path }}" --destination tmp/site_3x
         env:
           JEKYLL_ENV: production
 
       - name: Merge sitemaps + move Jekyll versions
         run: |
-          ruby jekyll_site/.scripts/merge-sitemaps.rb
-          mkdir _site/2.x
-          cp -R jekyll_site/.submodules/wiremock.org-2.x/tmp/site_2x/* _site/2.x/
-          mkdir _site/3.x
+          ruby jekyll_site/.scripts/merge-sitemaps.rb 
+          mkdir -p _site/2.x 
+          cp -R jekyll_site/.submodules/wiremock.org-2.x/tmp/site_2x/* _site/2.x/ 
+          mkdir -p _site/3.x 
           cp -R jekyll_site/tmp/site_3x/* _site/3.x/
 
       # ---- MkDocs section ----
