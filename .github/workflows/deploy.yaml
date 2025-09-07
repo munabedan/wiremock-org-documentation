@@ -44,6 +44,7 @@ jobs:
       - name: Build Jekyll 2.x
         run: |
           cd .submodules/wiremock.org-2.x
+          bundle install
           bundle exec jekyll build --config '../../_config.yml,../../_config-2.x.yml' --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
