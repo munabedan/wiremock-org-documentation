@@ -12,6 +12,7 @@ title_separator: "|"
 name: "Tom Akehurst"
 description: "WireMock is a flexible API mocking tool for fast, robust and comprehensive testing."
 url: "https://munabedan.github.io"
+baseurl: "/wiremock-org-documentation"
 gh_repo: "http://github.com/wiremock"
 teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
