@@ -11,6 +11,7 @@ search: false
  *  - https://twitter.com/mmistakes
  *
 */
+$baseurl: "{{ site.baseurl }}";
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
