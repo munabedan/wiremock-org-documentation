@@ -9,8 +9,9 @@ on:
   workflow_dispatch:
 
 jobs:
+  # Build job
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -23,7 +24,7 @@ jobs:
           ruby-version: '2.7.6'
           bundler: '2.3.26'   # last stable for Ruby 2.7
           bundler-cache: true
-          
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
@@ -32,19 +33,33 @@ jobs:
         run: bundle install
 
       - name: Build Jekyll root site
-        run: bundle exec jekyll build --config '_config.yml' --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build --config '_config.yml'
         env:
-          JEKYLL_ENV: development
+          JEKYLL_ENV: production
 
       - name: Build Jekyll 2.x
         run: |
           cd .submodules/wiremock.org-2.x
           bundle install
-          bundle exec jekyll build --config '../../_config.yml,../../_config-2.x.yml' --baseurl "${{ steps.pages.outputs.base_path }}/2.x"
+          bundle exec jekyll build --config '../../_config.yml,../../_config-2.x.yml' 
         env:
-          JEKYLL_ENV: development
+          JEKYLL_ENV: production
 
-      # Add MkDocs build validation
+      - name: Build Jekyll 3.x
+        run: |
+          bundle exec jekyll build --config '_config.yml,_config-3.x.yml'
+        env:
+          JEKYLL_ENV: production
+
+      - name: Merge sitemaps + move Jekyll versions
+        run: |
+          ruby .scripts/merge-sitemaps.rb
+          mkdir _site/2.x
+          cp -R .submodules/wiremock.org-2.x/tmp/site_2x/* _site/2.x/
+          mkdir _site/3.x
+          cp -R tmp/site_3x/* _site/3.x/
+
+      # Build MkDocs site into _site/docs
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
