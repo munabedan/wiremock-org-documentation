@@ -37,7 +37,7 @@ jobs:
         run: bundle install
 
       - name: Build Jekyll root site
-        run: bundle exec jekyll build --config '_config.yml' --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build --config '_config.yml'
         env:
           JEKYLL_ENV: production
 
@@ -51,7 +51,7 @@ jobs:
 
       - name: Build Jekyll 3.x
         run: |
-          bundle exec jekyll build --config '_config.yml,_config-3.x.yml' --baseurl "${{ steps.pages.outputs.base_path }}"
+          bundle exec jekyll build --config '_config.yml,_config-3.x.yml'
         env:
           JEKYLL_ENV: production
 
