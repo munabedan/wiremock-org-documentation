@@ -1,4 +1,5 @@
-url: "https://munabedan.github.io/wiremock-org-documentation/2.x"
+url: "https://munabedan.github.io"
+baseurl: "/wiremock-org-documentation/2.x"
 destination: "./tmp/site_2x"
 wiremock_version: 2.35.1
 wiremock_archive_site: true
