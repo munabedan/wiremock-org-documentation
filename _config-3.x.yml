@@ -1,2 +1,8 @@
-url: "https://munabedan.github.io/wiremock-org-documentation/3.x"
+url: "https://munabedan.github.io" 
+baseurl: "/wiremock-org-documentation/3.x"  
+
 destination: "./tmp/site_3x"
+wiremock_version: 3.x
+wiremock_archive_site: true
+wiremock_baseline: 3.x
+pageEditPrefix: https://github.com/wiremock/wiremock.org/edit/3.x/
