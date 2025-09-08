@@ -598,7 +598,7 @@ html {
 
       li {
         padding-left: $p-l;
-        background: url("{{ '/assets/svg/bullet.svg' | absolute_url }}") no-repeat left center;
+        background: url("#{$baseurl}/assets/svg/bullet.svg") no-repeat left center;
       }
     }
 
